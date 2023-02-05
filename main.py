@@ -41,7 +41,8 @@ cars = []
 # directement de la densité) le modèle permet aux voitures de
 # se déplacer sans collision.
 # - En cas d'extrême densité (> 127 voitures), le modèle ne 
-# permet pas d'éviter les collisions.
+# permet pas d'éviter sufisamment de collisions (les voitures
+# sont en collisions dès l'itération 1).
 
 while True:
     for i in range(35):
@@ -50,7 +51,6 @@ while True:
     road = Road(cars)
 
     # On s'assure de commencer le programme en ayant aucune collisions.
-    break
     if not (road.checkCollision()):
         break
     
