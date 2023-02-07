@@ -174,7 +174,7 @@ class Road:
             self.update()
             self.display()
             # On met cette ligne au besoin si l'on veut bien observer le
-            # mouvement des voitures
+            # mouvement des voitures.
             # sleep(0.05)
             system('cls')
 
